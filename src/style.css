@@ -1,0 +1,168 @@
+body{
+    background-color: #FFFFFF;
+
+}
+
+.screen{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+main{
+    background-color:black;
+    height: 500px;
+    width: 800px;
+    
+    border-color: black;
+    border-width: 15px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    margin-left: 20%;
+    margin-right: 20%;
+    position: relative;
+    /* top:30%; */
+    /* bottom:50%; */
+    /* left:20%;
+    right:20%; */
+    
+}
+
+.welcome{
+    background-color: #D1499A;
+    /* border-style: solid;
+    border-color: white;
+    border-width: 15px; */
+    border-radius: 5px;
+    text-align: center;
+    color: #FFFFFF;
+    /* margin-top: 15% ; */
+    /* margin-bottom: 20%;
+    margin-left: 20%;
+    margin-right: 20%; */
+    padding: 4%;
+      
+}
+
+#screen1 h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+   
+}
+
+#inputName{
+    background-color: transparent;
+    border-color: white;
+    border-width: 10px;
+    border: solid;
+    border-radius: 5px;
+    color: white;
+}
+.sendBut{
+    background-color:#55DBCB;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    padding: 1%;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+
+
+.screenH{
+    float: left;
+}
+
+
+
+
+#containerSaludo{
+    background-color: #D1499A;
+    height:92%;
+    position: absolute;
+    text-align: center;
+    width: 50%; 
+    padding-top: 5%;
+}
+.textMain{
+    background-color: transparent;
+    color: #FFFFFF;
+    font-family: 'Quicksand';
+}
+.textMes{
+    color: #FFFFFF;
+}
+
+img {
+    width:100%;
+    /* max-width:200px; */
+}
+#containerSaludo img{
+    border-radius: 15px;
+    max-width:200px;
+}
+#containerPicture{
+    background-color: rgba(0, 0, 0,1);
+    position: absolute;
+    /*
+    top: 0;
+    bottom: 0;
+    right: 0;*/
+    left: 50%;
+    width: 50%;
+    height: 100%; 
+    padding-bottom: 0px;
+}
+.textMes{
+    font-family: "Quicksand";
+    font-weight: normal;
+}
+
+
+
+
+.textPicture{
+    color:#FFFFFF;
+    /* background-color: rgba(0, 0, 0,.3); */
+    font-size: 50px;
+    font-weight: 390;
+    font-family: 'Kaushan Script';
+    text-align: center;
+    /* word-spacing: 10px; */
+    position: absolute;
+    top: 20%;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+}
+
+#screenValid,#screenInvalid{
+    text-align: center;
+    float: left;
+    padding: 2%;
+    margin: 4%;
+    align-self: center;
+}
+.message{
+    text-align: center;
+    color: white;
+
+}
+.textResult{
+    background-color: #D1499A;
+    text-align: center;
+    width: 50%;
+    display: inline-block;
+    float: left;
+    padding: 2%;
+    margin: 4%;
+
+}
+h4,h6{
+    display: block;
+}
+.optionsBut{
+
+}
