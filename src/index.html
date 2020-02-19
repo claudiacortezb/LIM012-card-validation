@@ -9,54 +9,54 @@
     <!--onload="inicializar()      <header>
             <h1>Bienvenida a la plataforma de pago de ----- </h1>
           </header> -->
+    
+    <!-- <footer></footer> -->
     <main>
-      <div id=screen1 class="welcome active">
-        <h1>Bienvenida a la plataforma de pago de -----</h1>
-        <label>Por favor ingresa tu nombre <br> <br>
-          <input type="text" maxlength="10" id="inputName" value="" > <br><br></label>
-        <button  id="welcomBut" class="sendBut" >Enviar</button>
+      <div id=screen1 class="active">
+        <h1>Bienvenido a blablabla</h1>
+        <!-- <h1>Listo para conseguir eso que tanto querias?</h1> -->
+        <label><h2> Para empezar ingresa tu nombre: </h2> 
+          <input type="text" id="inputName" class="textMain" maxlength="10" value="" > <br><br></label>
+        <button  id="welcomBut" class="sendBut" ><b>Enviar</b></button>
       </div>
       
       <div id=screen2 class="screen">
-        <div id=containerSaludo class="screenH">
+        <div id=containerSaludo >
           <h1 class="textMain">Hola <span name="spanName"></span></h1>
-          <img src="C:\Users\Claudia\Pictures\icons\card.jpg" alt="tarjeta">
-          <label><h2 class="textMes"> Ingresa tu numero de tarjeta:<br></h2>
-            <input type="text" id="numTar" class="textMain" maxlength="10" value=""><br><br>
+          <img src="images\card.jpg" alt="tarjeta">
+          <label><h2> Ingresa tu numero de tarjeta:<br></h2>
+            <input type="text" id="numTar" class="textMain" maxlength="16" value=""><br><br>
           </label>
-          <button id="validBut" class="sendBut" >Enviar</button>
+          <button id="validBut" class="sendBut"><b>Enviar</b></button>
         </div>
-        <div id=containerPicture class="screenH">
-          <img src="C:\Users\Claudia\Pictures\Proyects\lake.jpg" alt="lake">
+        <div id=containerPicture>
+          <img src="images\lake.jpg" alt="lake">
           <p class="textPicture">Tan solo a un paso de tu proxima aventura</p>
         </div>
       </div>
 
       <div id=screenValid class="screen">
-        <div class="message">
            <h1 class="textResult">Pago realizado con exito!</h1>
-        </div>
-        <img src="C:\Users\Claudia\Pictures\icons\check.jpg" alt="check">
+        <img src="images\check.jpg" alt="check" class="imgResult">
         <div class="optionsBut">
-          <button  class="againBut sendBut" >Seguir comprando</button>
-          <button  class="outBut sendBut" onclick="window.close()">Salir</button> <!-- solo desde js no se puede cerrar la ventana,si js no la creo -->
+          <button  class="againBut sendBut" ><b>Seguir comprando</b></button>
+          <button  class="outBut sendBut" onclick="window.close()"><b>Salir</b></button> <!-- solo desde js no se puede cerrar la ventana,si js no la creo -->
         </div>    
         
       </div>
 
       <div id=screenInvalid class="screen">    
         <h1 class="textResult">Lo sentimos!<br></h1>   
-        <h4>Parece que <span name='spanNumber'></span> no es una tarjeta valida</h4>
-        <img src="C:\Users\Claudia\Pictures\icons\cross.jpg" alt="cross">
-        <h6>Asegurate de ingresar un numero de 12 digitos</h6>
-        <div class="optionsBut">
-          <button class="againBut sendBut" >Intenta otra vez</button>
-          <button class="outBut sendBut" onclick="window.close();">Salir </button>
+        <h2>Parece que <span name='spanNumber'></span> no es una tarjeta valida</h2>
+        <img src="images\cross.jpg" alt="cross" class="imgResult">
+        <h2>Asegurate de ingresar un numero de 16 digitos</h2>
+        <div class="optionsBut"> 
+          <button class="againBut sendBut" ><b>Intenta otra vez</b></button>
+          <button class="outBut sendBut" onclick="window.close();"><b>Salir</b></button>
         </div>
       </div>
 
     </main>
-    <!-- <footer></footer> -->
     <script  src="index.js" type="module" ></script>
   </body>
 </html>

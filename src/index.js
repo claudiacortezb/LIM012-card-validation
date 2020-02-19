@@ -1,4 +1,6 @@
 import validator from './validator.js';
+// const cardNumberInput=document.getElementById('cardNumber-input');
+// const cardNumberOutput=document.getElementById('cardNumber-output');
 
 const screen1Elem=document.getElementById('screen1');
 const screen2Elem=document.getElementById('screen2');
@@ -44,13 +46,45 @@ const sendName=()=>{
 }
 welcomButElem.addEventListener('click',sendName);
 
-validButElem.addEventListener('click',isValid);
+
+
+
+
+// let result=true;
+// let hash;
+
+// result=validator.isValid(numTarElem.value);
+
+
+
+const callIsVa=()=>{
+    let result=validator.isValid(numTarElem.value);
+    showResult(result);
+}
+
+validButElem.addEventListener('click',callIsVa);
+
+
+const showResult=(x)=>{
+        if(x){ 
+        screen2Elem.style.display='none';
+        screenValidElem.style.display='block';}
+        else{ 
+        spanNumberElem.textContent=validator.maskify(numTarElem.value);//no puedo llamar defrente a numTarValue porque no esta en el scope
+        screen2Elem.style.display='none';
+        screenInvalidElem.style.display='block';  
+        } 
+}
+
+
+const again=()=>{
+    screenValidElem.style.display='none';
+    screenInvalidElem.style.display='none';
+    screen2Elem.style.display='block';
+    numTarElem.value='';//no se puede con numTarValue porque esta afuera del scope
+}
 againBut1Elem.addEventListener('click',again);
 againBut2Elem.addEventListener('click',again);
-
-
-
-
 
 
 
