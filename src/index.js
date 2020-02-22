@@ -26,7 +26,6 @@ const againBut2Elem=document.getElementsByClassName('againBut')[1];
 const outBut1Elem=document.getElementsByClassName('outBut')[0];
 const outBut2Elem=document.getElementsByClassName('outBut')[1];
 
-//no se si debe ir aqui
 let userName;
 const sendName=()=>{
     const inputValue=inputElem.value;//debe estar dentro del sendName,sino no toma el value
@@ -41,20 +40,10 @@ const sendName=()=>{
         screen1Elem.style.display='none';
         spanNameElem.textContent=userName;
         screen2Elem.style.display='block';
-        console.log(userName);       
+        // console.log(userName);       
     }    
 }
 welcomButElem.addEventListener('click',sendName);
-
-
-
-
-
-// let result=true;
-// let hash;
-
-// result=validator.isValid(numTarElem.value);
-
 
 
 const callIsVa=()=>{
@@ -70,7 +59,7 @@ const showResult=(x)=>{
         screen2Elem.style.display='none';
         screenValidElem.style.display='block';}
         else{ 
-        spanNumberElem.textContent=validator.maskify(numTarElem.value);//no puedo llamar defrente a numTarValue porque no esta en el scope
+        spanNumberElem.textContent=validator.maskify(numTarElem.value);
         screen2Elem.style.display='none';
         screenInvalidElem.style.display='block';  
         } 
@@ -81,17 +70,19 @@ const again=()=>{
     screenValidElem.style.display='none';
     screenInvalidElem.style.display='none';
     screen2Elem.style.display='block';
-    numTarElem.value='';//no se puede con numTarValue porque esta afuera del scope
+    numTarElem.value='';
 }
 againBut1Elem.addEventListener('click',again);
 againBut2Elem.addEventListener('click',again);
 
+const out=()=>{
+    screenValidElem.style.display='none';
+    screenInvalidElem.style.display='none';
+    screen1Elem.style.display='block';
+    numTarElem.value='';
+    inputElem.value='';
+}
+outBut1Elem.addEventListener('click',out);
+outBut2Elem.addEventListener('click',out);
 
 
-
-
-
-
-
-    
-console.log(validator);
