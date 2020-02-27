@@ -111,15 +111,17 @@ En el `README.md`, cuéntanos cómo pensaste en los usuarios y cuál fue tu proc
 para definir el producto final a nivel de experiencia y de interfaz.
 
 * Quiénes son los principales usuarios de producto.
-  Personas que estén interesadas en viajar, especialmente jovenes con espeiritu aventurero.
+
+  Personas que estén interesadas en viajar, especialmente jovenes con espiritu aventurero.
 
 * Cuáles son los objetivos de estos usuarios en relación con tu producto.
   A través de esta plataforma ellos podran adquirir sus boletos/paquetes.
 
 * Cómo crees que el producto que estás creando está resolviendo sus problemas.
   Podran comprar de una manera mas sencilla y asegurarse que la tarjeta que usaran es válida
+
 * Imagen del Prototipo de Baja fidelidad
-![](images/prototipoBaja.jpg)
+https://github.com/claudiacortezb/LIM012-card-validation/blob/master/src/images/prototipoBaja.jpeg
 * Imagen del Prototipo de Alta fidelidad desarrollado en Figma
 https://www.figma.com/file/Rw7goYpgzd0qcXTeN0IIN8/Card-Validation?node-id=0%3A1
 
@@ -155,8 +157,15 @@ Estos puntos los presentarás en el `README.md`.
 Debe contener lo siguiente:
 
 * Un título con el nombre de tu proyecto.
+
+Validador de Tarjeta para compras por internet
 * Un resumen de 1 o 2 líneas de qué se trata tu proyecto.
+
+Con este validador de tarjetas el usuario podrá determinar si su tarjeta es correcta,para poder comprar pasajes por una plataforma.
+
 * La imagen final de tu proyecto.
+
+https://github.com/claudiacortezb/LIM012-card-validation/blob/master/src/images/screen.jpeg
 * Investigación UX:
   1. Explicar quiénes son los usuarios y los objetivos en relación con el
     producto.
