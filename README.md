@@ -165,7 +165,7 @@ Con este validador de tarjetas el usuario podrá determinar si su tarjeta es cor
 
 * La imagen final de tu proyecto.
 
-https://github.com/claudiacortezb/LIM012-card-validation/blob/master/src/images/screen.jpeg
+https://github.com/claudiacortezb/LIM012-card-validation/blob/master/src/images/screen.jpg
 * Investigación UX:
   1. Explicar quiénes son los usuarios y los objetivos en relación con el
     producto.
